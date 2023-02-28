@@ -7,6 +7,7 @@ import heroImg03 from '../assets/images/img3.jpg'
 import Subtitle from '../shared/Subtitle'
 import BookIMG from '../assets/images/book.png'
 import SearchBar from '../shared/SearchBar';
+import FeaturedDocumentList from '../components/Featured-documents/FeaturedDocumentsList';
 class Home extends Component {
     render() {
         return <>
@@ -42,6 +43,19 @@ class Home extends Component {
                 </Row>
             </Container>
         </section>
+        {/**========================== featured document section start=================== */}
+        <section>
+            <Container>
+                <Row>
+                    <Col lg = "12" className='mb-5'>
+                    <Subtitle  subtitle={"Explore"}/>
+                    <h2 className='featured__document-title'>Our featured documents</h2>
+                    </Col>
+                    <FeaturedDocumentList></FeaturedDocumentList>
+                </Row>
+            </Container>
+        </section>
+        {/**========================== featured document section end=================== */}
         </>
     }
 }
